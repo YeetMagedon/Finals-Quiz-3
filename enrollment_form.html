@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Enrollment Form</title>
+    <style>
+        body {
+            font-family: garamond, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: lightblue;
+        }
+        h1 {
+            text-align: center;
+            font-size: 50px;
+            color: #333;
+        }
+        form {
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        form div {
+            margin-bottom: 15px;
+        }
+        form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        form input, form select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        form input[type="radio"], form input[type="checkbox"] {
+            width: auto;
+            margin-right: 10px;
+        }
+        form button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            color: #fff;
+            background-color: black;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: blue;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        table th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Student Enrollment Form</h1>
+    <form action="#" method="POST">
+        <div>
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+        </div>
+        <div>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="1" required>
+        </div>
+        <div style="display: inline-flex; gap: 10px; align-items: center;">
+            <label>Sex:</label>
+            <input type="radio" id="male" name="sex" value="Male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="sex" value="Female" required>
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <label for="course">Course:</label>
+            <select id="course" name="course" required>
+                <option value="">Select a course</option>
+                <option value="BSIT">BSIT</option>
+                <option value="BSSW">BSSW</option>
+                <option value="BSPA">BSPA</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+        <div>
+            <label>Interests:</label>
+            <input type="checkbox" id="web" name="interests" value="Web Development">
+            <label for="web">Web Development</label>
+            <input type="checkbox" id="data" name="interests" value="Data Science">
+            <label for="data">Data Science</label>
+            <input type="checkbox" id="network" name="interests" value="Networking">
+            <label for="network">Networking</label>
+            <input type="checkbox" id="design" name="interests" value="Graphic Design">
+            <label for="design">Graphic Design</label>
+        </div>
+        <button type="submit">Enroll Now</button>
+    </form>
+
+    <h3>Student Records:</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Age</th>
+                <th>Sex</th>
+                <th>Course</th>
+                <th>Interests</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Romblekoks</td>
+                <td>Romblekoks@ligma.com</td>
+                <td>11teen</td>
+                <td>Male</td>
+                <td>BSIT</td>
+                <td>Web Development, Data Science</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Lizard</td>
+                <td>Yeet@oohay.com</td>
+                <td>20</td>
+                <td>Female</td>
+                <td>BSSW</td>
+                <td>Networking</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Balutin mo ng pagmamahal</td>
+                <td>balut_balutin_mo@one23ree.com</td>
+                <td>21</td>
+                <td>Male</td>
+                <td>BSPA</td>
+                <td>Graphic Design</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
